@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Properties | AI-Powered Real Estate Strategy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+        :root { --navy: #0A2540; --green: #004225; --accent: #00A86B; }
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .heading { font-family: 'Playfair Display', sans-serif; }
+        .hero-bg { background: linear-gradient(rgba(10,37,64,0.88), rgba(10,37,64,0.92)), url('https://picsum.photos/id/1015/2000/1200') center/cover; }
+        .map-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .map-card:hover { transform: translateY(-12px); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); }
+    </style>
+</head>
+<body class="bg-[#0A2540] text-white">
+    <!-- NAV -->
+    <nav class="fixed top-0 w-full bg-[#0A2540]/95 backdrop-blur-md z-50 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#004225] rounded-2xl flex items-center justify-center text-2xl font-bold">AP</div>
+                <span class="heading text-3xl font-semibold tracking-tight">Access Properties</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#how" class="hover:text-[#00A86B]">How It Works</a>
+                <a href="#examples" class="hover:text-[#00A86B]">Examples</a>
+                <a href="#ceo" class="hover:text-[#00A86B]">Leadership</a>
+            </div>
+            <button onclick="window.open('https://access-properties.streamlit.app', '_blank')" 
+                    class="px-6 py-3 bg-white text-[#0A2540] hover:bg-[#004225] hover:text-white rounded-2xl font-semibold transition-all">
+                Launch Strategy Tool
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 bg-white/10 px-5 py-2 rounded-3xl text-sm mb-6">
+                    <span class="w-2 h-2 bg-[#00A86B] rounded-full animate-pulse"></span>
+                    AI Real Estate Intelligence
+                </div>
+                <h1 class="heading text-6xl md:text-7xl leading-none font-semibold tracking-tighter mb-6">
+                    Real estate strategy.<br>
+                    <span class="text-[#004225]">Powered by AI.</span>
+                </h1>
+                <p class="text-xl text-white/80 mb-10">Enter your criteria. Get AI-generated heatmaps, site rankings, and expansion plans for QSR & retail growth.</p>
+                <button onclick="window.open('https://access-properties.streamlit.app', '_blank')" 
+                        class="px-8 py-4 bg-[#004225] hover:bg-[#006633] text-white text-lg rounded-3xl font-semibold flex items-center gap-3">
+                    Start Free Analysis
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="py-24 bg-white text-[#0A2540]">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="heading text-5xl font-semibold tracking-tighter text-center mb-16">From Criteria to Strategy in Minutes</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl border border-gray-100 hover:border-[#004225] transition-colors">
+                    <div class="text-5xl font-bold text-[#004225] mb-4">1</div>
+                    <h3 class="text-2xl font-semibold mb-3">Enter Criteria</h3>
+                    <p class="text-gray-600">Free after email. Demographics, traffic, budget, drive-thru, etc.</p>
+                </div>
+                <div class="p-8 rounded-3xl border border-gray-100 hover:border-[#004225] transition-colors">
+                    <div class="text-5xl font-bold text-[#004225] mb-4">2</div>
+                    <h3 class="text-2xl font-semibold mb-3">AI Analyzes Markets</h3>
+                    <p class="text-gray-600">Real-time data on population, comps, zoning, and competitor footprints.</p>
+                </div>
+                <div class="p-8 rounded-3xl border border-gray-100 hover:border-[#004225] transition-colors">
+                    <div class="text-5xl font-bold text-[#004225] mb-4">3</div>
+                    <h3 class="text-2xl font-semibold mb-3">Unlock Full Report</h3>
+                    <p class="text-gray-600">Interactive maps, ranked sites, projected ROI, and trade-area analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXAMPLE MAPS -->
+    <section id="examples" class="py-24 bg-[#0A2540]">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="heading text-5xl font-semibold tracking-tighter text-center mb-12">Real Expansion Intelligence</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="map-card bg-[#112B4A] rounded-3xl overflow-hidden">
+                    <img src="https://picsum.photos/id/1015/800/500" alt="California QSR Heatmap" class="w-full h-80 object-cover">
+                    <div class="p-8">
+                        <div class="text-[#00A86B] text-sm">QSR • SOUTHERN CALIFORNIA</div>
+                        <div class="text-2xl font-semibold">14 High-Potential Sites</div>
+                    </div>
+                </div>
+                <div class="map-card bg-[#112B4A] rounded-3xl overflow-hidden">
+                    <img src="https://picsum.photos/id/866/800/500" alt="National Fast Casual Map" class="w-full h-80 object-cover">
+                    <div class="p-8">
+                        <div class="text-[#00A86B] text-sm">FAST CASUAL • NATIONAL</div>
+                        <div class="text-2xl font-semibold">Demographic + Traffic Overlay</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO SECTION -->
+    <section id="ceo" class="py-24 bg-white text-[#0A2540]">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid md:grid-cols-12 gap-16 items-center">
+                <div class="md:col-span-5">
+                    <img id="ceo-photo" src="https://via.placeholder.com/800x800/004225/FFFFFF?text=Your+Professional+Photo" 
+                         alt="Justin R. Crawford" class="w-full rounded-3xl shadow-2xl">
+                </div>
+                <div class="md:col-span-7">
+                    <h2 class="heading text-5xl font-semibold tracking-tighter mb-6">Meet the Founder &amp; CEO</h2>
+                    <div class="prose prose-lg text-gray-600">
+                        <p><strong>Justin R. Crawford</strong> is the Founder &amp; CEO of Access Properties. A licensed California Real Estate Broker with a BBA in Real Estate and Urban Land Economics from the University of Wisconsin-Madison, he brings deep expertise from leading strategic real estate initiatives at major QSR brands.</p>
+                        <p>Most recently, as Manager of Strategic Real Estate Development at Habit Burger &amp; Grill, Justin developed automated tier mapping systems to accelerate nationwide expansion. Previously at Panda Restaurant Group, he served as Associate Real Estate Manager and Senior Real Estate Analyst, where he sourced and negotiated key sites, underwrote large portfolios, and drove data-backed expansion strategies across multiple states.</p>
+                    </div>
+                    <button onclick="alert('Thank you! Justin will reach out shortly at JustinCrawfordRE@gmail.com')" 
+                            class="mt-8 px-8 py-4 border border-[#004225] text-[#004225] hover:bg-[#004225] hover:text-white rounded-2xl font-semibold flex items-center gap-3 transition-all">
+                        <i class="fas fa-envelope"></i>
+                        Schedule a Strategy Call
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <div class="bg-[#004225] py-20 text-center">
+        <div class="max-w-2xl mx-auto px-8">
+            <h2 class="heading text-5xl font-semibold tracking-tighter text-white mb-6">Ready to find your next 10 perfect locations?</h2>
+            <button onclick="window.open('https://access-properties.streamlit.app', '_blank')" 
+                    class="px-12 py-6 bg-white text-[#004225] hover:bg-[#00A86B] hover:text-white text-xl font-semibold rounded-3xl">
+                Launch AI Strategy Tool
+            </button>
+            <p class="text-white/70 mt-6">Free to start • $149 unlocks full report</p>
+        </div>
+    </div>
+
+    <script>
+        // Simple modal can be re-added if you want the email step first
+        console.log('%cAccess Properties website ready!', 'color:#004225; font-family:monospace');
+    </script>
+</body>
+</html>
